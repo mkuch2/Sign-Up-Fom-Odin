@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+
+}
+body{
+  display: flex;
+}
+#hero{
+  background-color: red;
+  width: 40vw;
+  height: 100vh;
+}
+#content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+#intro{
+  text-align: left;
+}
+
+fieldset{
+  margin-top: 10vh;
+}
+label{
+  display: block;
+  font-size: 0.8rem;
+  font-family:Courier;
+
+}
+input + label{
+  margin-top: 0.65rem;
+}
+form{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 6vw;
+
+}
+
+input{
+  min-width: 16vw;
+}
+
