@@ -12,15 +12,16 @@
       <img src="odin-lined.png" alt="odin logo">
       <h1>Odin</h1>
     </div>
-    <span>Photo by  <u>Halie West</u> on <u>Unsplash</u></span>
+    <span>Photo by <u>Halie West</u> on <u>Unsplash</u></span>
   </div>
 
   <div id="content">
     <section id="intro">
-      <h3>This is not a real online service! You know you need
+      <h2>This is not a real online service! You know you need
           something like this in your life to help you realize
-          your deepest dreams. Sign up <em>now</em> to get started.</h3>
-      <h3>You <em>know</em> you want to.</h3>
+          your deepest dreams. Sign up <em>now</em> to get started.</h2>
+
+      <h2>You <em>know</em> you want to.</h2>
     </section>
 
     <fieldset>
@@ -28,24 +29,25 @@
       <form method="post">
         <div id="input-col-1">
           <label for="name" id="first-name">FIRST NAME</label>
-          <input type="text" placeholder="First Name">
+          <input type="text" id="name">
           <label for="email">EMAIL</label>
-          <input type="email" placeholder="Email" id="email">
+          <input type="email"  id="email">
           <label for="password">PASSWORD</label>
-          <input type="password" placeholder="Password" id="password">
+          <input type="password" id="password">
        </div>
         <div id="input-col-2">
           <label for="last-name">LAST NAME</label>
-          <input type="text" placeholder="Last Name" id="last-name">
+          <input type="text"  id="last-name">
           <label for="phone">PHONE NUMBER</label>
-          <input type="tel" placeholder="Phone Number" id="phone">
+          <input type="tel"  id="phone">
           <label for="confirm-password">CONFIRM PASSWORD</label>
-          <input type="password" placeholder="Confirm Password" id="confirm-password">
+          <input type="password"  id="confirm-password" pattern="[0-9a-fA-F]{4,8}">
         </div>
-      </form>
+      
     </fieldset>
     <section id="account">
       <button>Create Account</button>
+    </form>
       <span>Already have an account? <a href="#">Log in</span>
     </section>
 

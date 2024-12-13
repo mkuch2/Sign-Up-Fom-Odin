@@ -8,20 +8,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+  font-family: 'Courier New', Courier, monospace;
 
 }
 body{
   display: flex;
   margin: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 #hero{
   background-image: url(image.avif);
   background-size: cover;
-  width: 40vw;
-  height: 100vh;
+  width: 40%;
   position: relative;
 }
 
@@ -40,30 +39,59 @@ body{
 }
 #card-body h1{
   color: white;
-  font-size: 5vw;
+  font-size: 7vw;
   font-weight: 900;
   font-family: "Norse Bold";
+}
+
+#hero span{
+  color: white;
+  bottom:5px;
+  display:inline-block;
+  opacity: 0.75;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  
 }
 
 #content{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: lightblue;
+  background-color: #F9FAFB;
+  width: 100%;
+}
+#content > *{
+  padding-left:35px;
 }
 
 #intro{
   text-align: left;
+
+}
+
+#intro h2{
+  max-width: 66ch;
+  padding-top:px;
+  height: 100%;
 }
 
 fieldset{
   margin-top: 10vh;
+  background-color: #FFFFFF;
+  border-style: none;
+  padding: 15px 35px;
 }
+
 label{
   display: block;
   font-size: 0.8rem;
   font-family:Courier;
-
+  color: #4A525D;
+  letter-spacing: 0.1rem
+  
 }
 input + label{
   margin-top: 0.65rem;
@@ -73,10 +101,51 @@ form{
   flex-direction: row;
   justify-content: left;
   gap: 6vw;
+  padding: 15px 0 15px 0;
 
 }
 
 input{
   min-width: 16vw;
+  border: 2px solid #6b6c6ebd;
+  border-radius: 2px;
+  text-indent: 3px;
+  padding: 5px 0 5px 0;
+  margin-top: 2px;
 }
 
+input:focus{
+  outline: none;
+  border-color: rgb(80, 107, 202);
+  box-shadow: 1px 1px 3px  rgba(0,0,0,0.75);
+}
+
+input:invalid{
+  border-color: red;
+}
+
+#account{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  margin-top:15px;
+  font-size: 1.2rem;
+}
+
+button{
+  width: 15rem;
+  padding: 15px 0;
+  background-color: #596D48;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+a{
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;;
+}
